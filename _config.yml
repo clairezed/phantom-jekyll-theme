@@ -8,7 +8,7 @@
 # Site settings
 title: Spinastats
 email: clairezuliani@gmail.com
-description: The Jekyll version of the Phantom theme by HTML5 UP.
+description: Des statistiques pour comprendre les Vosges. Mais surtout s'amuser.
 baseurl: "/spinastats" # the subpath of your site, e.g. /blog
 url: "https://clairezed.github.io" # the base hostname & protocol for your site
 

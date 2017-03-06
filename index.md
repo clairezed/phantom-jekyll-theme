@@ -34,7 +34,3 @@ Source :
 <a href="https://presidentielle2017.conseil-constitutionnel.fr/les-parrainages/tous-les-parrainages/">
   presidentielle2017.conseil-constitutionnel.fr/
 </a>
-
-
-
-<!-- {% include tiles.html %} -->
