@@ -9,6 +9,26 @@ title: Home
     Y'a-t-il une spécificité de mon département par rapport au national ?</p>
 </header>
 
+<h2>Parrainages au 7 mars</h2>
+
+<p><i>Comparaison en pourcentage.</i></p>
+
+<canvas id="chart0307" width="1200" height="700"></canvas>
+
+<p><b>Commentaires :</b></p>
+
+<ul>
+  <li>
+    Finalement, Fillon rattrape Dupont-Aignan,
+  </li>
+  <li>
+    Le Pen fait une très belle entrée,
+  </li>
+  <li>
+      Toujours rien pour Charlotte Marchandise.
+  </li>
+</ul>
+
 
 <h2>Parrainages au 3 mars</h2>
 
