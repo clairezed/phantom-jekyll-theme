@@ -5,7 +5,8 @@
 
   var parrainageStats = [
     {chartId: "myChart", file:  "stats/20170302.json"},
-    {chartId: "chart0307", file:  "stats/20170307.json"}
+    {chartId: "chart0307", file:  "stats/20170307.json"},
+    {chartId: "chart0310", file:  "stats/20170310.json"}
   ]
   var dataHash = {}
   var franceTotal = 0
@@ -71,14 +72,38 @@
                 label: 'Vosges',
                 data: vosgesPercentage,
                 backgroundColor:"#43AA8B"
-            },
-            {
-              label: 'France',
-              data: francePercentage,
-              backgroundColor: '#AB4967'
-          }
-          ]
+              },
+              {
+                label: 'France',
+                data: francePercentage,
+                backgroundColor: '#AB4967'
+              }
+            ],
+            yLabels: ["yo", "yeah"]
         },
+        options: {
+          tooltips: {
+              callbacks: {
+                label: function(tooltipItem, data) {
+                  var label = data.datasets[tooltipItem.datasetIndex].label || '';
+
+                  if (label) {
+                    label += ': ';
+                  }
+                  console.log(tooltipItem.yLabel);
+                  label += tooltipItem.yLabel + " %";
+                  return label;
+                }
+                  // label: function(tooltipItem, data) {
+                  //   console.log(tooltipItem);
+                  //   console.log(data);
+                  //     // return "$" + Number(tooltipItem.yLabel).toFixed(0).replace(/./g, function(c, i, a) {
+                  //     //     return i > 0 && c !== "." && (a.length - i) % 3 === 0 ? "," + c : c;
+                  //     // });
+                  // }
+              }
+          }
+      }
     });
   }
 
