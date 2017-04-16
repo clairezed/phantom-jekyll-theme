@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Spinastats - comparatif parrainages
+title: Parrainages 2017
+permalink: /
 ---
 
 <header>
@@ -8,6 +9,10 @@ title: Spinastats - comparatif parrainages
   <p>Travail de statistique comparative rapide de l'attribution des parrainages en France et dans les Vosges.<br>
     Y'a-t-il une spécificité de mon département par rapport au national ?</p>
 </header>
+
+<h2>Test</h2>
+
+<div id="highCharts" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 <h2>Parrainages au 10 mars</h2>
 
@@ -74,3 +79,8 @@ Source :
 <a href="https://presidentielle2017.conseil-constitutionnel.fr/les-parrainages/tous-les-parrainages/">
   presidentielle2017.conseil-constitutionnel.fr/
 </a>
+
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/assets/js/parrainages-2017.js"></script>

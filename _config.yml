@@ -30,3 +30,6 @@ markdown: kramdown
 
 # Layout settings
 home-link-in-menu: yes
+
+include:
+  - _pages

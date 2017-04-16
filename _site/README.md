@@ -1,28 +1,28 @@
-# Phantom - Jekyll Theme
+# Spinastats
+
+A website with stats'n charts based on a nice Jekyll template.
+
+
+## How to use
+
+La config globale, commune à tous les environnements de développement, se trouve dans `_config.yml`. C'est la config qui est utilisée automatiquement par les pages github en production, on y trouve donc aussi les éléments de configuration propres à la production.
+
+Dans `_config.dev.yml` ne figurent **que** les éléments spécifiques au développement local. Ainsi, en lançant la commande ci-dessous, c'est comme lancer le fichier `_config.yml`, mais avec les éléments spécifiques de `_config.dev.yml`.
+
+Lancer le serveur :
+```bash
+bundle exec jekyll serve --config _config.yml,_config.dev.yml
+```
+Votre site est visible sur [localhost:4000](localhost:4000)
+
+
+# Credits
+
+## Theme
 
 A Jekyll version of the "Phantom" theme by [HTML5 UP](https://html5up.net/).
 
 ![Phantom Theme](images/phantom.jpg "Phantom Theme")
-
-# How to Use
-
-For those unfamiliar with how Jekyll works, check out [https://jekyllrb.com/](https://jekyllrb.com/) for all the details, 
-or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/), 
-and [creating pages](https://jekyllrb.com/docs/pages/).
-
-- **GitLab**: Simply fork this repository and start editing the `_config.yml` file!  
-- **GitHub**: Fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file! The `.gitlab-ci.yml` file is only needed for GitLab Pages, so feel free to delete this if you are using GitHub instead.
-
-# Added Features
-
-I've integrated lots of nice Jekyll features into the theme, such as:
-* [Formspree.io](https://formspree.io/) contact form integration - just add your email to the `_config.yml` and it works!
-* Your social profiles are linked from usernames you enter in `_config.yml`. Only social profiles buttons you enter in `config.yml` show up on the site footer.
-* Site logo support - Easily set any image or [Font Awesome icon](http://fontawesome.io/icons/) as your logo. If you enter a Font Awesome icon class in `_config.yml` it will override the default image used as the site logo.
-* **Coming soon**: Featured images and thumbnails in front matter for the homepage posts grid.
-* **Coming soon**: Easy featured image settings in `_config.yml` - choose to have Jekyll use a set height for featured images or have it display the entire image, pushing the page content further down.
-
-# Credits
 
 Original README from HTML5 UP:
 

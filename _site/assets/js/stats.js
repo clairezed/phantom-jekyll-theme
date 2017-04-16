@@ -19,6 +19,7 @@
       _.forEach(stats, function(item){
         populateDataHash(item, dataHash, franceTotal, vosgesTotal);
       })
+      console.log(dataHash);
 
       var candidateNames = Object.keys(dataHash);
       var vosgesPercentage = calculatePercentage('vosgesCount', vosgesTotal);
