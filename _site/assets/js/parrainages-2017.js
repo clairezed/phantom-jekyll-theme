@@ -1,4 +1,6 @@
-Highcharts.chart('highCharts', {
+// PARRAINAGES POURCENTAGES ====================================================
+
+Highcharts.chart('parrain2017percentage', {
     chart: {
         type: 'column'
     },
@@ -53,184 +55,192 @@ Highcharts.chart('highCharts', {
         name: 'France',
         color: '#AB4967',
         // data: [4.63, 4.27, 3.84, 5.14, 26.44, 14.83, 1.20, 2.28, 5.15, 4.56, 13.30, 0.98, 5.85, 4.17, 0.79, 2.57],
-        data: [{
-          y: 4.63,
-          name: 'Arthaud',
-          count: 637
-        },
-        {
-          y: 4.27,
-          name: 'Asselineau',
-          count: 587
-        },
-        {
-          y: 3.84,
-          name: 'Cheminade',
-          count: 528
-        },
-        {
-          y: 5.14,
-          name: 'Dupont-Aignan',
-          count: 707
-        },
-        {
-          y: 26.44,
-          name: 'Fillon',
-          count: 3635
-        },
-        {
-          y: 14.83,
-          name: 'Hamon',
-          count: 2039
-        },
-        {
-          y: 1.20,
-          name: 'Jardin',
-          count: 165
-        },
-        {
-          y: 2.28,
-          name: 'Juppé',
-          count: 313
-        },
-        {
-          y: 5.15,
-          name: 'Lassalle',
-          count: 708
-        },
-        {
-          y: 4.56,
-          name: 'Le Pen',
-          count: 627
-        },
-        {
-          y: 13.30,
-          name: 'Macron',
-          count: 1829
-        },
-        {
-          y: 0.98,
-          name: 'Marchandise',
-          count: 135
-        },
-        {
-          y: 5.85,
-          name: 'Mélenchon',
-          count: 805
-        },
-        {
-          y: 4.17,
-          name: 'Poutou',
-          count: 573
-        },
-        {
-          y: 0.79,
-          name: 'Temaru',
-          count: 109
-        },
-        {
-          y: 2.57,
-          name: 'Rade',
-          count: 353
-        },
-      ],
-        count: [637, 587, 528, 707, 3635, 2039, 165, 313, 708, 627, 1829, 135, 805, 573, 109, 353]
-
-    }, {
+        data: [
+          {
+            y: 4.63,  name: 'Arthaud',  count: 637
+          },
+          {
+            y: 4.27,  name: 'Asselineau', count: 587
+          },
+          {
+            y: 3.84,  name: 'Cheminade', count: 528
+          },
+          {
+            y: 5.14,  name: 'Dupont-Aignan', count: 707
+          },
+          {
+            y: 26.44, name: 'Fillon', count: 3635
+          },
+          {
+            y: 14.83, name: 'Hamon', count: 2039
+          },
+          {
+            y: 1.20, name: 'Jardin', count: 165
+          },
+          {
+            y: 2.28, name: 'Juppé', count: 313
+          },
+          {
+            y: 5.15, name: 'Lassalle', count: 708
+          },
+          {
+            y: 4.56, name: 'Le Pen', count: 627
+          },
+          {
+            y: 13.30, name: 'Macron', count: 1829
+          },
+          {
+            y: 0.98, name: 'Marchandise', count: 135
+          },
+          {
+            y: 5.85, name: 'Mélenchon', count: 805
+          },
+          {
+            y: 4.17, name: 'Poutou', count: 573
+          },
+          {
+            y: 0.79, name: 'Temaru', count: 109
+          },
+          {
+            y: 2.57, name: 'Rade', count: 353
+          },
+        ]
+      }, {
         name: 'Vosges',
         color:"#43AA8B",
         data: [
           {
-            y: 4.17,
-            name: 'Arthaud',
-            count: 6
+            y: 4.17,  name: 'Arthaud',  count: 6
           },
           {
-            y: 0.69,
-            name: 'Asselineau',
-            count: 1
+            y: 0.69,  name: 'Asselineau', count: 1
           },
           {
-            y: 11.11,
-            name: 'Cheminade',
-            count: 16
+            y: 11.11,  name: 'Cheminade',  count: 16
           },
           {
-            y: 15.97,
-            name: 'Dupont-Aignan',
-            count: 23
+            y: 15.97,  name: 'Dupont-Aignan',  count: 23
           },
           {
-            y: 29.86,
-            name: 'Fillon',
-            count: 43
+            y: 29.86,  name: 'Fillon', count: 43
           },
           {
-            y: 1.39,
-            name: 'Hamon',
-            count: 2
+            y: 1.39,  name: 'Hamon',  count: 2
           },
           {
-            y: 4.86,
-            name: 'Jardin',
-            count: 7
+            y: 4.86,  name: 'Jardin', count: 7
           },
           {
-            y: 0.69,
-            name: 'Juppé',
-            count: 1
+            y: 0.69,  name: 'Juppé',  count: 1
           },
           {
-            y: 3.47,
-            name: 'Lassalle',
-            count: 5
+            y: 3.47,  name: 'Lassalle', count: 5
           },
           {
-            y: 6.94,
-            name: 'Le Pen',
-            count: 10
+            y: 6.94,  name: 'Le Pen', count: 10
           },
           {
-            y: 10.42,
-            name: 'Macron',
-            count: 15
+            y: 10.42,  name: 'Macron', count: 15
           },
           {
-            y: 0.00,
-            name: 'Marchandise',
-            count: 0
+            y: 0.00,  name: 'Marchandise',  count: 0
           },
           {
-            y: 2.08,
-            name: 'Mélenchon',
-            count: 3
+            y: 2.08,  name: 'Mélenchon',  count: 3
           },
           {
-            y: 3.47,
-            name: 'Poutou',
-            count: 5
+            y: 3.47,  name: 'Poutou', count: 5
           },
           {
-            y: 0.00,
-            name: 'Temaru',
-            count: 0
+            y: 0.00,  name: 'Temaru', count: 0
           },
           {
-            y: 4.86,
-            name: 'Rade',
-            count: 7
+            y: 4.86,  name: 'Rade', count: 7
           },
-        ],
-        // data: [4.17, 0.69, 11.11, 15.97, 29.86, 1.39, 4.86, 0.69, 3.47, 6.94, 10.42, 0.00, 2.08, 3.47, 0.00, 4.86],
-        count: [6, 1, 16, 23, 43, 2, 7, 1, 5, 10, 15, 0, 3, 5, 0, 7]
+        ]
+    }]
+});
 
-    // }, {
-    //     name: 'London',
-    //     data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
-    //
-    // }, {
-    //     name: 'Berlin',
-    //     data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+// PARRAINAGES DIFFRENTIEL ====================================================
 
+
+Highcharts.chart('parrain2017diff', {
+    chart: {
+        type: 'column'
+    },
+    legend:
+      {enabled: false},
+    title: {
+        text: 'Différentiel dans les pourcentages de parrainage'
+    },
+    xAxis: {
+        categories: [
+            'Arthaud',
+            'Asselineau',
+            'Cheminade',
+            'Dupont-Aignan',
+            'Fillon',
+            'Hamon',
+            'Jardin',
+            'Juppé',
+            'Lassalle',
+            'Lepen',
+            'Macron',
+            'Marchandise',
+            'Mélenchon',
+            'Poutou',
+            'Temaru',
+            'Yade'
+        ]
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Différentiel',
+        data: [
+          {
+            y: -1.11,  name: 'Arthaud',  color:'tomato'
+          },
+          {
+            y: -6.15,  name: 'Asselineau', color:'tomato'
+          },
+          {
+            y: 2.89,  name: 'Cheminade',  color:'palegreen'
+          },
+          {
+            y: 3.11,  name: 'Dupont-Aignan',  color:'palegreen'
+          },
+          {
+            y: 1.13,  name: 'Fillon', color:'palegreen'
+          },
+          {
+            y: -10.68,  name: 'Hamon',  color:'tomato'
+          },
+          {
+            y: 4.05,  name: 'Jardin', color:'palegreen'
+          },
+          {
+            y: -3.28,  name: 'Juppé',  color:'tomato'
+          },
+          {
+            y: -1.48,  name: 'Lassalle', color:'tomato'
+          },
+          {
+            y: 1.52,  name: 'Le Pen', color:'palegreen'
+          },
+          {
+            y: -1.28,  name: 'Macron', color:'tomato'
+          },
+          {
+            y: -2.81,  name: 'Mélenchon',  color:'tomato'
+          },
+          {
+            y: -1.20,  name: 'Poutou', color:'tomato'
+          },
+          {
+            y: 1.89,  name: 'Rade', color:'palegreen'
+          },
+        ]
     }]
 });

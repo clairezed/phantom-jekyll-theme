@@ -10,11 +10,6 @@ permalink: /
     Y'a-t-il une spécificité de mon département par rapport au national ?</p>
 </header>
 
-<h2>Comparaison au pourcentage</h2>
-
-<p>Ici, j'ai pris en compte tous les candidats qui avaient au final récolté plus de 100 parrainages. Comme ça, hop, je garde un oeil sur Charlotte Marchandise (mais du coup j'inclus un certain Temaru que personne connait).
-
-
 <p><i>
   Source :
   <a href="https://presidentielle2017.conseil-constitutionnel.fr/les-parrainages/tous-les-parrainages/">
@@ -22,7 +17,12 @@ permalink: /
   </a>
 </i></p>
 
-<div id="highCharts" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<h2>Comparaison au pourcentage</h2>
+
+Ici, j'ai pris en compte tous les candidats qui avaient au final récolté plus de 100 parrainages. Comme ça, hop, je garde un oeil sur Charlotte Marchandise (mais du coup j'inclus un certain Temaru que personne connait).
+
+
+<div id="parrain2017percentage" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 <!--
 <p><b>Commentaires :</b></p>
@@ -39,6 +39,25 @@ permalink: /
   </li>
 </ul> -->
 
+<h2>Différentiel</h2>
+
+A partir des pourcentages calculés plus haut, et en ne prenant en compte que les candidats ayant reçus des parrainages au niveau national et dans les Vosges, l'idée ici est de mettre en lumière les différentiels.
+
+Les résultats sont à lire de la façon suivantes :
+<ul>
+  <li>
+    Dupont-Aignan a reçu dans les Vosges 3 fois plus de parrainages que la moyenne nationale. Alors que Fillon y a reçu quasi le même pourcentage (1,13 fois plus, soit + 0,13%).
+  </li>
+  <li>
+    Par contre, Hamon a trouvé dans les Vosges 10 fois moins de parrains qu'ailleurs. Tout de même.
+  </li>
+  <li>
+      Dans les grandes lignes, on pourrait presque tracer un différentiel de couleur politique entre les candidats au-dessus de la barre et ceux en-dessous (sauf Alexandre Jardin, qui vient brouiller les lignes).
+  </li>
+</ul>
+
+
+<div id="parrain2017diff" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 
 
