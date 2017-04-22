@@ -186,10 +186,8 @@ Highcharts.chart('parrain2017diff', {
             'Lassalle',
             'Lepen',
             'Macron',
-            'Marchandise',
             'Mélenchon',
             'Poutou',
-            'Temaru',
             'Yade'
         ]
     },
@@ -244,3 +242,106 @@ Highcharts.chart('parrain2017diff', {
         ]
     }]
 });
+
+
+// TABLEAU =====================================================================
+
+(function($) {
+
+  function parseResult(result) {
+    var resultArray = [];
+    result.split("\n").forEach(function(row) {
+        var rowArray = [];
+        row.split(",").forEach(function(cell) {
+            rowArray.push(cell);
+        });
+        resultArray.push(rowArray);
+    });
+    return resultArray;
+  }
+
+  function santizeArray(array) {
+    // remove empty row
+    _.remove(array, function(row) {
+      return row == "";
+    })
+    // remove lat, long, departement
+    return _.each(array, function(row) {
+      return _.remove(row, function(cell, idx) {
+        return (idx == 6 || idx == 7 || idx == 5)
+      })
+    })
+    // console.table(array)
+  }
+
+
+  function createTable(tableData) {
+    var table = document.createElement('table');
+    table.setAttribute("id", "parrain-table");
+    var tableBody = document.createElement('tbody');
+    tableData.forEach(function(rowData, idx) {
+      // thead ---------------------------------
+      if (idx == 0) {
+        var thead = document.createElement('thead')
+        var row = document.createElement('tr');
+        rowData.forEach(function(cellData, idx) {
+          var cell = document.createElement('th');
+          cell.appendChild(document.createTextNode(cellData));
+          row.appendChild(cell);
+        });
+        thead.appendChild(row)
+        table.appendChild(thead)
+
+
+      } else {
+        var row = document.createElement('tr');
+        // tbody ------------------------------------
+        rowData.forEach(function(cellData, idx) {
+          var cell = document.createElement('td');
+          cell.appendChild(document.createTextNode(cellData));
+          row.appendChild(cell);
+        });
+
+        tableBody.appendChild(row);
+      }
+
+
+    });
+
+    table.appendChild(tableBody);
+    return table;
+  }
+
+
+
+  // Entry Point ---------------------------------------------------------------
+  $.get( "stats/parrainages-vosges.csv" , function( lines ) {
+    var array = parseResult(lines)
+    var sanitizedArray = santizeArray(array)
+    // console.table(array)
+    var finalTable = createTable(array)
+    console.log(finalTable);
+    $("#parrain-table-wrapper").append(finalTable)
+    $("#parrain-table").DataTable( {
+      "language": {
+            "lengthMenu": "Voir _MENU_ lignes par page",
+            "zeroRecords": "bin non, rien en stock, désolée",
+            "info": "Voici la page _PAGE_ sur _PAGES_",
+            "infoEmpty": "No records available",
+            "infoFiltered": "(filtered from _MAX_ total records)",
+            "search": "Rechercher",
+            "paginate": {
+              "first":      "Premier",
+              "last":       "Dernier",
+              "next":       "Suivant",
+              "previous":   "Précédent"
+          },
+        }
+    } )
+
+  });
+
+
+
+
+})(jQuery);

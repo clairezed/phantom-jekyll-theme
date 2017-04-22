@@ -22,8 +22,6 @@ Votre site est visible sur [localhost:4000](localhost:4000)
 
 A Jekyll version of the "Phantom" theme by [HTML5 UP](https://html5up.net/).
 
-![Phantom Theme](images/phantom.jpg "Phantom Theme")
-
 Original README from HTML5 UP:
 
 ```

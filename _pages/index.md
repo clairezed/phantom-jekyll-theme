@@ -43,24 +43,33 @@ Ici, j'ai pris en compte tous les candidats qui avaient au final récolté plus 
 
 A partir des pourcentages calculés plus haut, et en ne prenant en compte que les candidats ayant reçus des parrainages au niveau national et dans les Vosges, l'idée ici est de mettre en lumière les différentiels.
 
+
+<div id="parrain2017diff" style="min-width: 310px; height: 400px; margin: 0 auto 20px"></div>
+
+
 Les résultats sont à lire de la façon suivantes :
 <ul>
-  <li>
-    Dupont-Aignan a reçu dans les Vosges 3 fois plus de parrainages que la moyenne nationale. Alors que Fillon y a reçu quasi le même pourcentage (1,13 fois plus, soit + 0,13%).
-  </li>
-  <li>
-    Par contre, Hamon a trouvé dans les Vosges 10 fois moins de parrains qu'ailleurs. Tout de même.
-  </li>
-  <li>
-      Dans les grandes lignes, on pourrait presque tracer un différentiel de couleur politique entre les candidats au-dessus de la barre et ceux en-dessous (sauf Alexandre Jardin, qui vient brouiller les lignes).
-  </li>
+<li>
+Dupont-Aignan a reçu dans les Vosges 3 fois plus de parrainages que la moyenne nationale. Alors que Fillon y a reçu quasi le même pourcentage (1,13 fois plus, soit + 0,13%).
+</li>
+<li>
+Par contre, Hamon a trouvé dans les Vosges 10 fois moins de parrains qu'ailleurs. Tout de même.
+</li>
+<li>
+Dans les grandes lignes, on pourrait presque tracer un différentiel de couleur politique entre les candidats au-dessus de la barre et ceux en-dessous (sauf Alexandre Jardin, qui vient brouiller les lignes).
+</li>
 </ul>
 
+<h2>Détail des parrainages vosgiens</h2>
 
-<div id="parrain2017diff" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<!-- <div class="row uniform btn-line">
+  <div class="1u 3u$(small)">
+    <a href="#" class="button special x-small">Arthaud</a>
+  </div>
+  <div class="1u 3u$(small)">
+    <a href="#" class="button special small">Asselineau</a>
+  </div>
+</div> -->
 
 
-
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="{{ site.url }}{{ site.baseurl }}/assets/js/parrainages-2017.js"></script>
+<div id="parrain-table-wrapper"></div>

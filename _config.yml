@@ -31,5 +31,18 @@ markdown: kramdown
 # Layout settings
 home-link-in-menu: yes
 
+# Sass ------------------------------------------------
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# Locale ----------------------------------------------
+
+timezone: Europe/Paris
+encoding: utf-8
+locale: fr
+
 include:
   - _pages

@@ -1,0 +1,33 @@
+.dataTables_length select{
+  display: inline-block;
+  width: auto;
+  height: auto;
+  &:before {
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+    color: #c9c9c9;
+    content: '\f078';
+    display: block;
+    height: 3em;
+    line-height: 3em;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 3em;
+  }
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  background: none;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: none;
+  background-color: #585858
+}
