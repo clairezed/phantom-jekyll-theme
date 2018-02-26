@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parrainages 2017</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Travail de statistique comparative rapide de l'attribution des parrainages en France et dans les Vosges.  Y'a-t-il une spécificité de mon département par rap...">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css ">
+    <link rel="canonical" href="/epinal/2017/04/05/parrainages-2017-vosges.html">
+</head>
+
+
+<body>
+
+  <!-- Wrapper -->
+<div id="wrapper">
+
+	<header id="header">
+		<div class="inner">
+
+			<!-- Logo -->
+			<a href="/" class="logo">
+				<span class="symbol">
+
+					
+
+					<img src="/images/logo.svg" alt="" />
+
+					
+
+				</span><span class="title">Spinastats</span>
+			</a>
+			<!-- Nav -->
+			<nav>
+				<ul>
+					<li><a href="#menu">Menu</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+
+	<nav id="menu">
+	<h2>Menu</h2>
+	<ul>
+
+		
+		<!-- <p> _pages/about.md</p> -->
+			
+		
+		<!-- <p> _pages/elements.md</p> -->
+			
+		
+		<!-- <p> _pages/generic.md</p> -->
+			
+		
+		<!-- <p> _pages/index.md</p> -->
+			
+				<li><a href="/">Accueil</a></li>
+			
+		
+		<!-- <p> assets/css/main.scss</p> -->
+			
+		
+
+		
+			
+				<li><a href="/a-propos">A propos</a></li>
+			
+		
+			
+				<li><a href="/elements">Elements</a></li>
+			
+		
+			
+				<li><a href="/generik">Generic Test</a></li>
+			
+		
+			
+				<li><a href="/"></a></li>
+			
+		
+			
+		
+
+	</ul>
+</nav>
+
+
+	<!-- Main -->
+	<div id="main">
+		<div class="inner">
+
+
+  <header>
+    <h1>Parrainages 2017
+       
+       <br><span class="small"> à la recherche de la spécificité vosgienne </span>
+        
+    </h1>
+  </header>
+
+  
+
+  <p>Travail de statistique comparative rapide de l'attribution des parrainages en France et dans les Vosges.<br />
+  Y'a-t-il une spécificité de mon département par rapport au national ?</p>
+
+<!--more-->
+
+<p><i>
+  Source :
+  <a href="https://presidentielle2017.conseil-constitutionnel.fr/les-parrainages/tous-les-parrainages/">
+    presidentielle2017.conseil-constitutionnel.fr/
+  </a>
+</i></p>
+
+<h2>Comparaison au pourcentage</h2>
+
+<p>Ici, j’ai pris en compte tous les candidats qui avaient au final récolté plus de 100 parrainages. Comme ça, hop, je garde un oeil sur Charlotte Marchandise (mais du coup j’inclus un certain Temaru que personne connait).</p>
+
+<div id="parrain2017percentage" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+<!--
+<p><b>Commentaires :</b></p>
+
+<ul>
+  <li>
+    Dupont-Aignan rétrécie son écart avec Fillon, avec un soutien proprement spectaculaire des Vosgiens. Trois fois plus de parrainages Dupont-Aignan dans les Vosges qu'ailleurs en France. Mais pourquoi ??
+  </li>
+  <li>
+    Pour continuer dans les gros écarts positif par rapport au national : 2 fois plus pour Cheminade, 3 fois plus pour Rama Yade... (mais aussi 4 fois plus pour Alexandre Jardin, même si les chiffres sont bien plus réduits). Ca fait presque relativiser le score vosgien supérieur de Marine Lepen.
+  </li>
+  <li>
+      Dans les différentiels négatifs : l'écart le plus spectaculaire est... 8 fois moins de parrainages pour Hamon. De la à en déduire une coloration politique générale dans le département, non, je n'oserai pas.
+  </li>
+</ul> -->
+
+<h2>Différentiel</h2>
+
+<p>A partir des pourcentages calculés plus haut, et en ne prenant en compte que les candidats ayant reçus des parrainages au niveau national et dans les Vosges, l’idée ici est de mettre en lumière les différentiels.</p>
+
+<div id="parrain2017diff" style="min-width: 310px; height: 400px; margin: 0 auto 20px"></div>
+
+<p>Les résultats sont à lire de la façon suivantes :</p>
+<ul>
+<li>
+Dupont-Aignan a reçu dans les Vosges 3 fois plus de parrainages que la moyenne nationale. Alors que Fillon y a reçu quasi le même pourcentage (1,13 fois plus, soit + 0,13%).
+</li>
+<li>
+Par contre, Hamon a trouvé dans les Vosges 10 fois moins de parrains qu'ailleurs. Tout de même.
+</li>
+<li>
+Dans les grandes lignes, on pourrait presque tracer un différentiel de couleur politique entre les candidats au-dessus de la barre et ceux en-dessous (sauf Alexandre Jardin, qui vient brouiller les lignes).
+</li>
+</ul>
+
+<h2>Détail des parrainages vosgiens</h2>
+
+<!-- <div class="row uniform btn-line">
+  <div class="1u 3u$(small)">
+    <a href="#" class="button special x-small">Arthaud</a>
+  </div>
+  <div class="1u 3u$(small)">
+    <a href="#" class="button special small">Asselineau</a>
+  </div>
+</div> -->
+
+<div id="parrain-table-wrapper"></div>
+
+
+
+  </div>
+</div>
+<!-- Footer -->
+<footer id="footer">
+	<div class="inner">
+		<!-- <section>
+			<h2>Get in touch</h2>
+			<form method="post" action="https://formspree.io/clairezuliani@gmail.com"
+      method="POST">
+				<div class="field half first">
+					<input type="text" name="name" id="name" placeholder="Name" />
+				</div>
+				<div class="field half">
+					<input type="email" name="_replyto" id="email" placeholder="Email" />
+				</div>
+				<div class="field">
+					<textarea name="message" id="message" placeholder="Message"></textarea>
+				</div>
+				<ul class="actions">
+					<li>
+						<input type="submit" value="Send" class="special" />
+					</li>
+				</ul>
+			</form>
+		</section> -->
+		<!-- <section>
+			<h2>Follow</h2>
+			<ul class="icons">
+				
+				<li><a href="https://twitter.com/ZooletteDesBois" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+				
+				
+				
+				
+				
+				<li><a href="https://github.com/clairezed" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+				
+				
+				
+				
+				<li><a href="mailto:clairezuliani@gmail.com" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+				
+			</ul>
+		</section> -->
+		<ul class="copyright">
+			<li>Spinastats, hobby n°34 de <a href="http://www.clairezuliani.com">Claire Zuliani</a> </li>
+		</ul>
+	</div>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="http://localhost:4000/assets/js/jquery.min.js"></script>
+<script src="http://localhost:4000/assets/js/skel.min.js"></script>
+<script src="http://localhost:4000/assets/js/util.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+<!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="http://localhost:4000/assets/js/main.js"></script>
+<script src="http://localhost:4000/assets/js/parrainages-2017.js"></script>
+<script src="http://localhost:4000/assets/js/resultats-presidentielles-2017.js"></script>
+
+
+</body>
+
+</html>

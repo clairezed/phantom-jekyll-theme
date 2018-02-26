@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+  {% include header.html %}
+
+  <header>
+    <h1>{{ page.title }}
+       {% if page.subtitle %}
+       <br><span class="small"> {{ page.subtitle }} </span>
+        {% endif %}
+    </h1>
+  </header>
+
+  {% if page.featured-image %}
+    <span class="image main">
+      <img src="{{ page.featured-image }}" alt="">
+    </span>
+  {% endif %}
+
+  {{ content }}
+
+
+  {% include footer.html %}
+
+</body>
+
+</html>

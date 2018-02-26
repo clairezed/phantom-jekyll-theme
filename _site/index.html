@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Parrainages 2017</title>
+    <title>Accueil</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -48,15 +48,28 @@
 	<ul>
 
 		
+		<!-- <p> _pages/about.md</p> -->
 			
 		
+		<!-- <p> _pages/elements.md</p> -->
 			
 		
+		<!-- <p> _pages/generic.md</p> -->
 			
 		
+		<!-- <p> _pages/index.md</p> -->
+			
+				<li><a href="/">Accueil</a></li>
+			
+		
+		<!-- <p> assets/css/main.scss</p> -->
 			
 		
 
+		
+			
+				<li><a href="/a-propos">A propos</a></li>
+			
 		
 			
 				<li><a href="/elements">Elements</a></li>
@@ -67,7 +80,7 @@
 			
 		
 			
-				<li><a href="/">Parrainages 2017</a></li>
+				<li><a href="/"></a></li>
 			
 		
 			
@@ -80,77 +93,60 @@
 	<!-- Main -->
 	<div id="main">
 		<div class="inner">
- <header>
-  <h1>Parrainages présidentelle 2017 : <br /> à la recherche de la spécificité vosgienne</h1>
-  <p>Travail de statistique comparative rapide de l'attribution des parrainages en France et dans les Vosges.<br />
-    Y'a-t-il une spécificité de mon département par rapport au national ?</p>
-</header>
+ <section class="tiles">
 
-<p><i>
-  Source :
-  <a href="https://presidentielle2017.conseil-constitutionnel.fr/les-parrainages/tous-les-parrainages/">
-    presidentielle2017.conseil-constitutionnel.fr/
-  </a>
-</i></p>
 
-<h2>Comparaison au pourcentage</h2>
+	<article class="style2">
+		<span class="image">
+			<img src="http://localhost:4000/images/pic01.jpg" alt="" />
+		</span>
+		<a href="http://localhost:4000/epinal/2017/04/27/presidentielle-premier-tour-epinal.html">
+			<h2>Présidentielle 2017</h2>
+			<div class="content">
+				<p><p>Proposition d'une autre grille d'analyse des résultats à la présidentielle à l'échelle micro-locale.</p>
 
-<p>Ici, j’ai pris en compte tous les candidats qui avaient au final récolté plus de 100 parrainages. Comme ça, hop, je garde un oeil sur Charlotte Marchandise (mais du coup j’inclus un certain Temaru que personne connait).</p>
+</p>
+			</div>
+		</a>
+	</article>
 
-<div id="parrain2017percentage" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	<article class="style3">
+		<span class="image">
+			<img src="http://localhost:4000/images/pic01.jpg" alt="" />
+		</span>
+		<a href="http://localhost:4000/epinal/2017/04/05/parrainages-2017-vosges.html">
+			<h2>Parrainages 2017</h2>
+			<div class="content">
+				<p><p>Travail de statistique comparative rapide de l'attribution des parrainages en France et dans les Vosges.<br />
+  Y'a-t-il une spécificité de mon département par rapport au national ?</p>
 
-<!--
-<p><b>Commentaires :</b></p>
+</p>
+			</div>
+		</a>
+	</article>
 
-<ul>
-  <li>
-    Dupont-Aignan rétrécie son écart avec Fillon, avec un soutien proprement spectaculaire des Vosgiens. Trois fois plus de parrainages Dupont-Aignan dans les Vosges qu'ailleurs en France. Mais pourquoi ??
-  </li>
-  <li>
-    Pour continuer dans les gros écarts positif par rapport au national : 2 fois plus pour Cheminade, 3 fois plus pour Rama Yade... (mais aussi 4 fois plus pour Alexandre Jardin, même si les chiffres sont bien plus réduits). Ca fait presque relativiser le score vosgien supérieur de Marine Lepen.
-  </li>
-  <li>
-      Dans les différentiels négatifs : l'écart le plus spectaculaire est... 8 fois moins de parrainages pour Hamon. De la à en déduire une coloration politique générale dans le département, non, je n'oserai pas.
-  </li>
-</ul> -->
+	<article class="style4">
+		<span class="image">
+			<img src="http://localhost:4000/images/pic01.jpg" alt="" />
+		</span>
+		<a href="http://localhost:4000/jekyll/update/2016/07/20/welcome-to-jekyll.html">
+			<h2>Welcome to Jekyll!</h2>
+			<div class="content">
+				<p><p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes.</p>
+</p>
+			</div>
+		</a>
+	</article>
 
-<h2>Différentiel</h2>
 
-<p>A partir des pourcentages calculés plus haut, et en ne prenant en compte que les candidats ayant reçus des parrainages au niveau national et dans les Vosges, l’idée ici est de mettre en lumière les différentiels.</p>
+</section>
 
-<div id="parrain2017diff" style="min-width: 310px; height: 400px; margin: 0 auto 20px"></div>
-
-<p>Les résultats sont à lire de la façon suivantes :</p>
-<ul>
-<li>
-Dupont-Aignan a reçu dans les Vosges 3 fois plus de parrainages que la moyenne nationale. Alors que Fillon y a reçu quasi le même pourcentage (1,13 fois plus, soit + 0,13%).
-</li>
-<li>
-Par contre, Hamon a trouvé dans les Vosges 10 fois moins de parrains qu'ailleurs. Tout de même.
-</li>
-<li>
-Dans les grandes lignes, on pourrait presque tracer un différentiel de couleur politique entre les candidats au-dessus de la barre et ceux en-dessous (sauf Alexandre Jardin, qui vient brouiller les lignes).
-</li>
-</ul>
-
-<h2>Détail des parrainages vosgiens</h2>
-
-<!-- <div class="row uniform btn-line">
-  <div class="1u 3u$(small)">
-    <a href="#" class="button special x-small">Arthaud</a>
-  </div>
-  <div class="1u 3u$(small)">
-    <a href="#" class="button special small">Asselineau</a>
-  </div>
-</div> -->
-
-<div id="parrain-table-wrapper"></div>
  </div>
 </div>
 <!-- Footer -->
 <footer id="footer">
 	<div class="inner">
-		<section>
+		<!-- <section>
 			<h2>Get in touch</h2>
 			<form method="post" action="https://formspree.io/clairezuliani@gmail.com"
       method="POST">
@@ -169,8 +165,8 @@ Dans les grandes lignes, on pourrait presque tracer un différentiel de couleur 
 					</li>
 				</ul>
 			</form>
-		</section>
-		<section>
+		</section> -->
+		<!-- <section>
 			<h2>Follow</h2>
 			<ul class="icons">
 				
@@ -188,11 +184,9 @@ Dans les grandes lignes, on pourrait presque tracer un différentiel de couleur 
 				<li><a href="mailto:clairezuliani@gmail.com" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
 				
 			</ul>
-		</section>
+		</section> -->
 		<ul class="copyright">
-			<li>&copy; Spinastats. All rights reserved</li>
-			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-			<li>Jekyll integration: <a href="http://andrewbanchi.ch">Andrew Banchich</a></li>
+			<li>Spinastats, hobby n°34 de <a href="http://www.clairezuliani.com">Claire Zuliani</a> </li>
 		</ul>
 	</div>
 </footer>
@@ -210,6 +204,7 @@ Dans les grandes lignes, on pourrait presque tracer un différentiel de couleur 
 <!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="http://localhost:4000/assets/js/main.js"></script>
 <script src="http://localhost:4000/assets/js/parrainages-2017.js"></script>
+<script src="http://localhost:4000/assets/js/resultats-presidentielles-2017.js"></script>
 
 
 </body>

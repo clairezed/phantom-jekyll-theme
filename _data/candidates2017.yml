@@ -1,0 +1,8 @@
+- key: fillon
+  name: Fillon
+  party: Les Républicains
+  default-coeff: 9
+- key: hamon
+  name: Hamon
+  party: Parti socialiste
+  default-coeff: 4

@@ -1,0 +1,38 @@
+---
+layout: post
+title: Présidentielle 2017
+subtitle: A quel point mes voisins sont-ils de droite ?
+categories: epinal
+---
+
+<p>Proposition d'une autre grille d'analyse des résultats à la présidentielle à l'échelle micro-locale.</p>
+
+<!--more-->
+
+
+<h2>Coefficients</h2>
+
+<form method="get" action="#" data-is-form="get-presidential-coeff">
+  <table>
+    <thead>
+      <tr>
+        <th>Candidat</th>
+        <th>Parti</th>
+        <th>Coefficient</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for candidate in site.data.candidates2017 %}
+      <tr>
+        <td>{{candidate.name}}</td>
+        <td>{{candidate.party}}</td>
+        <td>
+          <input type="text" name="coeff[{{candidate.key}}]" value={{candidate.default-coeff}} placeholder="Votre coefficient">
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <!-- <button type="submit-form" value="Actualiser" class="special" data-for="update-coeff">Actualiser</button> -->
+  <input type="submit" value="Actualiser" class="special" />
+</form>
