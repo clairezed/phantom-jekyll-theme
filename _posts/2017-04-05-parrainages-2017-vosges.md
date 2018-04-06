@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Parrainages 2017
+title: Parrainages Vosges 2017
 subtitle: à la recherche de la spécificité vosgienne
 categories: epinal
 ---
