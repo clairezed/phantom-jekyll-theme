@@ -1,6 +1,6 @@
 // PARRAINAGES POURCENTAGES ====================================================
-
-Highcharts.chart('parrain2017percentage', {
+if(!!document.getElementById("parrain2017percentage")) {
+  Highcharts.chart('parrain2017percentage', {
     chart: {
         type: 'column'
     },
@@ -160,11 +160,13 @@ Highcharts.chart('parrain2017percentage', {
         ]
     }]
 });
+}
 
 // PARRAINAGES DIFFRENTIEL ====================================================
 
 
-Highcharts.chart('parrain2017diff', {
+if(!!document.getElementById("parrain2017diff")) {
+  Highcharts.chart('parrain2017diff', {
     chart: {
         type: 'column'
     },
@@ -242,17 +244,15 @@ Highcharts.chart('parrain2017diff', {
         ]
     }]
 });
-
+}
 
 // TABLEAU =====================================================================
 
 (function($) {
-  console.log("yo enclosed?");
-
   function parseResult(result) {
-    var resultArray = [];
+    const resultArray = [];
     result.split("\n").forEach(function(row) {
-        var rowArray = [];
+        const rowArray = [];
         row.split(",").forEach(function(cell) {
             rowArray.push(cell);
         });
@@ -272,21 +272,20 @@ Highcharts.chart('parrain2017diff', {
         return (idx == 6 || idx == 7 || idx == 5)
       })
     })
-    // console.table(array)
   }
 
 
   function createTable(tableData) {
-    var table = document.createElement('table');
+    const table = document.createElement('table');
     table.setAttribute("id", "parrain-table");
-    var tableBody = document.createElement('tbody');
+    const tableBody = document.createElement('tbody');
     tableData.forEach(function(rowData, idx) {
       // thead ---------------------------------
       if (idx == 0) {
-        var thead = document.createElement('thead')
-        var row = document.createElement('tr');
+        const thead = document.createElement('thead')
+        const row = document.createElement('tr');
         rowData.forEach(function(cellData, idx) {
-          var cell = document.createElement('th');
+          const cell = document.createElement('th');
           cell.appendChild(document.createTextNode(cellData));
           row.appendChild(cell);
         });
@@ -295,51 +294,48 @@ Highcharts.chart('parrain2017diff', {
 
 
       } else {
-        var row = document.createElement('tr');
+        const row = document.createElement('tr');
         // tbody ------------------------------------
         rowData.forEach(function(cellData, idx) {
-          var cell = document.createElement('td');
+          const cell = document.createElement('td');
           cell.appendChild(document.createTextNode(cellData));
           row.appendChild(cell);
         });
-
         tableBody.appendChild(row);
       }
-
-
     });
-
     table.appendChild(tableBody);
     return table;
   }
 
-
-  // Entry Point ---------------------------------------------------------------
-  $.get("/stats/parrainages-vosges.csv", function( lines ) {
-    console.log("csv");
-    var array = parseResult(lines)
-    var sanitizedArray = santizeArray(array)
-    // console.table(array)
-    var finalTable = createTable(array)
-    console.log(finalTable);
-    $("#parrain-table-wrapper").append(finalTable)
-    $("#parrain-table").DataTable( {
-      "language": {
-            "lengthMenu": "Voir _MENU_ lignes par page",
-            "zeroRecords": "bin non, rien en stock, désolée",
-            "info": "Voici la page _PAGE_ sur _PAGES_",
-            "infoEmpty": "No records available",
-            "infoFiltered": "(filtered from _MAX_ total records)",
-            "search": "Rechercher",
-            "paginate": {
-              "first":      "Premier",
-              "last":       "Dernier",
-              "next":       "Suivant",
-              "previous":   "Précédent"
-          },
-        }
-    } )
-
-  });
+  if(!!document.getElementById("parrain-table-wrapper")) {
+    // Entry Point ---------------------------------------------------------------
+    $.get("/stats/parrainages-vosges.csv", function( lines ) {
+      console.log("csv");
+      const array = parseResult(lines)
+      const sanitizedArray = santizeArray(array)
+      const finalTable = createTable(array)
+      console.log(finalTable);
+      const tableWrapper = document.getElementById('parrain-table-wrapper')
+      tableWrapper.appendChild(finalTable);
+      // $("#parrain-table-wrapper").append(finalTable)
+      $("#parrain-table").DataTable( {
+        "language": {
+              "lengthMenu": "Voir _MENU_ lignes par page",
+              "zeroRecords": "bin non, rien en stock, désolée",
+              "info": "Voici la page _PAGE_ sur _PAGES_",
+              "infoEmpty": "No records available",
+              "infoFiltered": "(filtered from _MAX_ total records)",
+              "search": "Rechercher",
+              "paginate": {
+                "first":      "Premier",
+                "last":       "Dernier",
+                "next":       "Suivant",
+                "previous":   "Précédent"
+            },
+          }
+      } )
+    });
+  }
 
 })(jQuery);
