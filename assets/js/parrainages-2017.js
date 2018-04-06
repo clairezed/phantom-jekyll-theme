@@ -247,6 +247,7 @@ Highcharts.chart('parrain2017diff', {
 // TABLEAU =====================================================================
 
 (function($) {
+  console.log("yo enclosed?");
 
   function parseResult(result) {
     var resultArray = [];
@@ -313,9 +314,9 @@ Highcharts.chart('parrain2017diff', {
   }
 
 
-
   // Entry Point ---------------------------------------------------------------
-  $.get( "stats/parrainages-vosges.csv" , function( lines ) {
+  $.get("/stats/parrainages-vosges.csv", function( lines ) {
+    console.log("csv");
     var array = parseResult(lines)
     var sanitizedArray = santizeArray(array)
     // console.table(array)
@@ -340,8 +341,5 @@ Highcharts.chart('parrain2017diff', {
     } )
 
   });
-
-
-
 
 })(jQuery);
