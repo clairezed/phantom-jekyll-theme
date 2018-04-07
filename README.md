@@ -61,3 +61,11 @@ Credits:
 ```
 
 Repository [Jekyll logo](https://github.com/jekyll/brand) icon licensed under a [Creative Commons Attribution 4.0 International License](http://choosealicense.com/licenses/cc-by-4.0/).
+
+## TODO
+
+- [ ] "Unfork" phantom theme (https://stackoverflow.com/questions/18390249/github-make-fork-an-own-project)
+- [ ] Configure jekyll assets
+	- https://philna.sh/blog/2016/06/28/asset-pipelines-with-jekyll-assets/
+	- https://mademistakes.com/articles/using-jekyll-2016/
+- [ ] Host to netlify

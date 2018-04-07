@@ -60,6 +60,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 </ol>
 <h3>Icons</h3>
 <ul class="icons">
+<i class="fas fa-user"></i>
+<i class="far fa-user"></i>
+<!--brand icon-->
+<i class="fab fa-github-square"></i>
 <li><a href="#" class="icon style1 fa-twitter"><span class="label">Twitter</span></a></li>
 <li><a href="#" class="icon style1 fa-facebook"><span class="label">Facebook</span></a></li>
 <li><a href="#" class="icon style1 fa-instagram"><span class="label">Instagram</span></a></li>

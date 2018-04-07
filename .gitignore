@@ -2,5 +2,5 @@ _site
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
-_config.secrets.yml
-_algolia_api_key
+.asset-cache
+.jekyll-cache

@@ -1,0 +1,10 @@
+//=require vendor/jquery.min
+//=require vendor/skel.min
+//=require vendor/util
+//=require vendor/lodash.min
+//=require vendor/highcharts
+//=require vendor/modules/exporting
+//=require vendor/jquery.dataTables.min
+//=require vendor/phantom5
+//=require parrainages-2017
+//=require resultats-presidentielles-2017
