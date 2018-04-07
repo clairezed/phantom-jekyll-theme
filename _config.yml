@@ -9,8 +9,7 @@
 title: Spinastats
 email: clairezuliani@gmail.com
 description: Des statistiques pour comprendre les Vosges. Mais surtout s'amuser.
-baseurl: "/spinastats" # the subpath of your site, e.g. /blog
-url: "https://clairezed.github.io" # the base hostname & protocol for your site
+url: "https://spinastats.netlify.com" # the base hostname & protocol for your site
 
 # Logo settings
 logo-image-url: images/logo.svg
